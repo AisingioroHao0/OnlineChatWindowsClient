@@ -42,10 +42,8 @@ namespace ChatServerSDK
             }
             return null;
         }
-        //默认服务ip120.53.14.170
-        public bool Connect(string ip, int port)
+        public bool Connect(string ip= "120.53.14.170", int port=21101)
         {
-
             try
             {
                 server.Connect(ip, port);
