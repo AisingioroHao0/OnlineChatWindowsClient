@@ -46,12 +46,13 @@ namespace OnlineChatWindowsClient
                 {
                     this.Invoke((MethodInvoker)delegate
                     {
-                        messageList.Items.Add("接收到了" + msg.sender_id + "的消息:" + msg.message);
+                        消息队列.Items.Add("接收到了" + msg.sender_id + "的消息:" + msg.message);
                     });
 
                 }
             }
         }
+
         private void SendMessageButton_Click(object sender, EventArgs e)
         {
             sdk.SendMessage(sendMessageFriendIDInputBox.Text, messageInputBox.Text);
@@ -64,11 +65,6 @@ namespace OnlineChatWindowsClient
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
         {
 
         }
